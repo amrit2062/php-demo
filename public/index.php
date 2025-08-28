@@ -16,13 +16,7 @@ $request = Request::createFromGlobals();
 
 $router = new Router();
 
-$router->get('/login', LoginController::class . '@showLoginPage');
-$router->post('/login', LoginController::class . '@loginUser');
-$router->get('/amrit', PagesController::class . '@homePage');
-
-$router->get('/', function (Request $request): Response {
-    return new Response(200, 'Hello, World!');
-});
+require_once __DIR__ . '/../routes/web.php';
 
 
 $response = $router->handle($request);
