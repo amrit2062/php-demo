@@ -11,6 +11,9 @@ $router->get('/login', LoginController::class . '@showLoginPage');
 $router->post('/login', LoginController::class . '@loginUser');
 $router->get('/amrit', PagesController::class . '@homePage');
 
-$router->get('/', function (Request $request): Response {
-    return new Response(200, 'Hello, World!');
-});
+$router->get('/',PagesController::class.'@homePage');
+
+
+// $router->get('/', function (Request $request): Response {
+//     return new Response(200, '');
+// });
