@@ -9,14 +9,14 @@ use App\Http\Response;
 use App\Utils\ParameterBag;
 
 
-class LoginController 
+class LoginController extends AbstractController
 {
 
     public function showLoginPage(Request $request): Response
     {
         $errors = new ParameterBag();
 
-        return (new Response())->setTemplate(TEMPLATE_PATH . 'signin.html.php', [
+        return $this->render('signin.html.php', [
             'request' => $request,
             'errors' => $errors
         ]);
@@ -48,7 +48,7 @@ class LoginController
         if (!empty($errors)) {
             $errors = new ParameterBag($errors);
 
-            return (new Response(400))->setTemplate(TEMPLATE_PATH.'signin.html.php', [
+            return $this->render('signin.html.php', [
                 'request' => $request,
                 'errors' => $errors
             ]);

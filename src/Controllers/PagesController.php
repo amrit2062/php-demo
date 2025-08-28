@@ -7,12 +7,12 @@ namespace App\Controllers;
 use App\Http\Request;
 use App\Http\Response;
 
-class PagesController {
+class PagesController extends AbstractController {
 
     public function homePage(Request $request): Response 
     {
-        return (new Response())->setTemplate(TEMPLATE_PATH . 'amrit.html.php', [
-                'name' => 'Amrit'
-            ]);
+        return $this->render('amrit.html.php', [
+            'name' => 'Amrit'
+        ]);
     }
 }
