@@ -8,7 +8,7 @@
     </head>
     <body>
     
-        <form class="signin-form" action="/signin" method="post">
+        <form class="signin-form" action="/login" method="post">
             <h1>Sign In</h1>
 
             <div class="form-group">
