@@ -34,7 +34,7 @@ class RegisterController extends AbstractController
         if (!$username) {
             $errors['username'] = 'Username is required';
         }
-        if ($password) {
+        if (empty($password)) {
             $errors['password'] = 'Password is  required';
         }
         if (filter_var($username, FILTER_VALIDATE_EMAIL) === false) {
