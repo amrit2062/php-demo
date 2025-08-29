@@ -41,7 +41,9 @@
                                 <?php endif; ?>
                             </div>
                             <!-- Submit Button-->
-                            <button class="btn btn-primary btn-xl" id="submitButton" type="submit">Login</button>
+                            <button class="btn btn-primary btn-lg" id="submitButton" type="submit">Login</button>
+                            <a class="btn btn-outline btn-lg" href="/Register">Register</a>
+
                         </form>
                     </div>
                 </div>
