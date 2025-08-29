@@ -38,7 +38,7 @@ class RegisterController extends AbstractController
             $errors['password'] = 'Password is  required';
         }
         if (filter_var($username, FILTER_VALIDATE_EMAIL) === false) {
-            $errors['username'] = 'Username must be the valid  email address';
+            $errors['username'] = 'Username must be a valid email address';
         }
         if (strlen($password) < 8) {
             $errors['password'] = 'Password  must  be at least 8 character long.';
