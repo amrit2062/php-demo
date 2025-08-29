@@ -3,7 +3,7 @@
 <section class="page-section" id="contact">
             <div class="container">
                 <!-- Contact Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Login</h2>
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Register</h2>
                 <!-- Icon Divider-->
                 <!-- Contact Section Form-->
                 <div class="row justify-content-center">
