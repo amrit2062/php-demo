@@ -39,9 +39,7 @@
                                     <div class="error-message">
                                         <?php echo $errors->get('LastName'); ?>
                                 
-                                    </div>
-                                    <?php endif; ?>
-                  
+                             </div>
 
                                     
                              <div class="form-floating mb-3">
