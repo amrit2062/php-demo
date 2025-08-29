@@ -17,7 +17,7 @@ class RegisterController extends AbstractController
         return $this->render('register.html.php', [
             'request' => $request,
             'errors' => $errors
-        ]);;
+        ]);
     }
     public function registerUser(Request $request): Response
     {
