@@ -64,6 +64,9 @@ class RegisterController extends AbstractController
 
 
 
-        return new Response(200, 'register.html.php');
+        return $this->render('register.html.php', [
+            'request' => $request,
+            'errors' => new ParameterBag()
+        ]);
     }
 }
