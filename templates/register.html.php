@@ -1,9 +1,18 @@
 <?php require_once TEMPLATE_PATH . 'common/header.html.php' ?>
+<?php 
+
+use App\Http\Request;
+use App\Utils\ParameterBag;
+
+/** @var ParameterBag $errors */ 
+/** @var Request $request */
+
+?>
 
 <section class="page-section" id="contact">
     <div class="container">
         <!-- Contact Section Heading-->
-        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Login</h2>
+        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Register</h2>
         <!-- Icon Divider-->
         <!-- Contact Section Form-->
         <div class="row justify-content-center">
@@ -84,5 +93,6 @@
         </div>
     </div>
 </section>
+
 
 <?php require_once TEMPLATE_PATH . 'common/footer.html.php' ?>
